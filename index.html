@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OyMyBerry — Сладкие моменты, созданные дома</title>
+  <meta name="description" content="Домашние десерты, приготовленные с любовью. Некоммерческий проект о том, как создавать сладкие моменты своими руками.">
+  <meta name="keywords" content="домашние десерты, выпечка дома, сладкие моменты, десерты с любовью, OyMyBerry">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OyMyBerry — Сладкие моменты, созданные дома">
+  <meta property="og:description" content="Домашние десерты, приготовленные с любовью. OyMyBerry — некоммерческий проект о домашней выпечке с душой.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oymyberry.ru">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="OyMyBerry">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-config="site.name">OyMyBerry</a>
+      <nav class="nav">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="gallery.html" data-nav="gallery">Галерея</a>
+        <a href="about.html" data-nav="about">О проекте</a>
+        <a href="contact.html" data-nav="contact">Контакты</a>
+      </nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-title" data-config="site.tagline">Сладкие моменты, созданные дома</div>
+      <p class="hero-subtitle" data-config="site.subtitle">О десертах, приготовленных с любовью дома</p>
+      <a href="contact.html" class="hero-link" data-config="site.hero_contact">Контакты</a>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider">
+    <span class="ornament">&#10022;</span>
+  </div>
+
+  <!-- Latest Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="label">Галерея</span>
+        <h2>Десерты</h2>
+        <p>Каждый десерт создан дома, с душой и вдохновением</p>
+      </div>
+      <div class="filter-bar">
+        <!-- Filled by JS -->
+      </div>
+      <div class="works-grid">
+        <!-- Filled by JS from works.json -->
+      </div>
+
+      <div id='scroll-sentinel'></div>
+      <div class='loading-spinner' id='loading-spinner' style='display:none'><div class='spinner'></div></div>
+      <div class='end-message' id='end-message' style='display:none'>Все десерты</div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider">
+    <span class="ornament">&#10022;</span>
+  </div>
+
+  <!-- About Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">OyMyBerry</div>
+          </div>
+        </div>
+        <div class="about-text animate-on-scroll stagger-2">
+          <span class="section-eyebrow">О проекте</span>
+          <h2 data-config="about.title">О проекте</h2>
+          <div class="quote" data-config="about.quote">Лучшие десерты получаются не по правилам, а с душой</div>
+          <p data-config="about.text">Каждый десерт, который здесь появляется — создан в домашней атмосфере, без спешки и без коммерции...</p>
+          <div style="margin-top: 2rem;">
+            <a href="about.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider">
+    <span class="ornament">&#10022;</span>
+  </div>
+
+  <!-- Contact Preview -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="section-header animate-on-scroll">
+        <span class="label">Контакты</span>
+        <h2>Давайте знакомиться</h2>
+        <p data-config="contact.order_text">Всегда рада единомышленникам и тёплому общению</p>
+      </div>
+      <div class="animate-on-scroll stagger-2">
+        <a href="contact.html" class="btn btn-filled">Написать</a>
+      </div>
+    </div>
+  </section>
+  <button class="scroll-top" id="scroll-top" aria-label="Наверх">&#8593;</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo" data-config="site.name">OyMyBerry</span>
+      <p data-config="footer.copyright">© OyMyBerry</p>
+      <p class="footer-made" data-config="footer.made_with">Сделано с душой</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

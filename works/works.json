@@ -1,0 +1,22 @@
+{
+  "works": [
+    {
+      "id": "20260521_000001",
+      "filename": "placeholder1.gif",
+      "filename_hover": "",
+      "title": "Нежный десерт",
+      "description": "Домашний десерт с любовью",
+      "category": "d1",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "20260521_000002",
+      "filename": "placeholder2.gif",
+      "filename_hover": "",
+      "title": "Ягодное наслаждение",
+      "description": "Свежие ягоды и нежный крем",
+      "category": "d2",
+      "date": "2026-05-21"
+    }
+  ]
+}
