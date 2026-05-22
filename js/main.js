@@ -33,6 +33,7 @@
   // ===================== APPLY CONFIG TO PAGE =====================
   function applyConfig() {
     if (!CONFIG) return;
+    window.CONFIG = CONFIG;
     document.querySelectorAll('[data-config]').forEach(function(el) {
       var val = getNestedValue(CONFIG, el.getAttribute('data-config'));
       if (val === undefined || val === null) return;
