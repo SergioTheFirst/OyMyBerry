@@ -1,22 +1,22 @@
 {
   "works": [
     {
-      "id": "20260521_000001",
-      "filename": "placeholder1.gif",
-      "filename_hover": "",
-      "title": "Нежный десерт",
-      "description": "Домашний десерт с любовью",
-      "category": "d1",
-      "date": "2026-05-21"
+      "id": "20260523_012849",
+      "filename": "20260523_012849.jpg",
+      "title": "TEST_TEST_TEST",
+      "description": "cosmos",
+      "category": "cakes",
+      "date": "2026-05-23",
+      "filename_hover": "20260523_012849_hover.jpg"
     },
     {
-      "id": "20260521_000002",
-      "filename": "placeholder2.gif",
-      "filename_hover": "",
-      "title": "Ягодное наслаждение",
-      "description": "Свежие ягоды и нежный крем",
-      "category": "d2",
-      "date": "2026-05-21"
+      "id": "20260523_013021",
+      "filename": "20260523_013021.jpg",
+      "title": "logo лого",
+      "description": "тест",
+      "category": "pastries",
+      "date": "2026-05-23",
+      "filename_hover": "20260523_013021_hover.jpg"
     }
   ]
 }
