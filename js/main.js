@@ -403,8 +403,28 @@
     return div.innerHTML;
   }
 
+  // ===================== COOKIE NOTICE =====================
+  var COOKIE_NOTICE_KEY = 'oymyberry_cookie_notice';
+
+  function initCookieNotice() {
+    var notice = document.getElementById('cookie-notice');
+    var btn = document.getElementById('cookie-accept');
+    if (!notice || !btn) return;
+
+    var accepted = false;
+    try { accepted = localStorage.getItem(COOKIE_NOTICE_KEY) === '1'; } catch (e) { accepted = false; }
+    if (accepted) return;
+
+    notice.hidden = false;
+    btn.addEventListener('click', function() {
+      try { localStorage.setItem(COOKIE_NOTICE_KEY, '1'); } catch (e) { /* storage blocked: hide for this view only */ }
+      notice.hidden = true;
+    });
+  }
+
   // ===================== INIT =====================
   function initPage() {
+    initCookieNotice();
     Promise.all([loadConfig(), loadWorks()]).then(function() {
       applyConfig();
       setActiveNav();
